@@ -1,0 +1,50 @@
+@media only screen and (min-width : $tablet)
+
+    .instagram
+       
+        &__text
+            position: absolute
+            top: calc(50% - 6.5rem)
+            left: 0
+            right: 0
+            z-index: 3
+            &:last-child
+                display: none
+            margin-bottom: 4vh 
+            &__title
+    
+                font:
+                    family: $mainfont
+                    size: 3rem
+                    weight: 300
+                
+                text:
+                    transform: uppercase
+                letter-spacing: .2rem
+                color: #FFFFFF
+
+            &__link
+                margin-top: 0
+
+                color: $pink
+                text:
+                    decoration: none
+                    transform: uppercase
+                    align: center
+                font:
+                    size: 2rem
+                letter-spacing: .2rem
+
+        .container
+            position: relative
+            &:after
+                position: absolute
+                content: ''
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: rgba(#1a1a1a, .4)
+            img
+                width: 25%
+                margin: -1px

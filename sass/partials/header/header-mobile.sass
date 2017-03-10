@@ -1,0 +1,163 @@
+@media only screen and (min-width : $mobile)
+    .container
+        width: 90%
+        margin: 0 auto
+
+    .header
+        height: 100vh
+        width: 100%
+
+        position: relative
+
+        background:
+            image: url('../img/header/headerbg.jpg')
+            size: cover
+            position: bottom
+        
+        
+        .logo
+            margin-top: 0
+
+            position: absolute
+            left: 5%
+            top: 5%
+
+            img
+                width: 40%
+
+
+        .navigation
+            
+            .openedNavigationBtn
+                span
+                    &:first-child
+                        transform: rotate(45deg)
+                        position: relative
+                        top: 8px
+                        transition: .2s
+                        background-color: $text
+                    &:nth-child(2)
+                        position: relative
+                        left: -10px
+                        opacity: 0
+                        transition: .5s
+                    &:last-child
+                        position: relative
+                        bottom: 8px
+                        transform: rotate(-45deg)
+                        transition: .2s
+                        background-color: $text
+                        
+
+            &__showNavigationBtn
+                position: absolute
+                right: 5%
+                top: 5.5%
+
+                background-color: transparent
+                border: 0
+
+                z-index: 99
+
+                span
+                    display: block
+
+                    margin: 1vh 0
+
+                    height: 2px
+                    width: 25px
+                    
+                    background-color: #FFFFFF
+
+                    transition: .2s
+                    &:nth-child(2)
+                        opacity: 1
+                        left: 0
+                        transition: .5s
+                
+                &:focus
+                    outline: none
+                
+            .shopwNavigationContent
+                position: fixed
+                top: 0 
+                transition: ease-in .25s
+            &__list
+                display: block
+                position: fixed
+                top: -100vh
+                height: 100vh
+                width: 100%
+
+                background-color: #FFFFFF
+
+                margin: 0
+                padding-left: 0
+
+                padding-top: 30vh
+
+                list-style-type: none
+
+                text-align: center
+
+                z-index: 1
+                transition: ease-out .25s
+                &__element
+                    margin: 2vh 0
+                    &:first-child
+                        margin-top: 0
+
+                    a
+                        text-decoration: none
+                        color: $text
+
+                        font:
+                            family: $mainfont
+                            size: 3.5rem
+                            weight: 700
+
+                        text-transform: uppercase
+                        letter-spacing: 1rem
+
+
+
+            
+        &__text
+            position: relative
+            top: 35vh
+
+            text-align: center
+            font:
+                family: $mainfont
+
+            &__title
+                margin-top: 0
+
+                font:
+                    size: 3rem
+                    weight: 300
+                color: #FFFFFF
+                text:
+                    transform: uppercase
+                letter-spacing: .5rem
+
+            &__link
+                text-decoration: none
+                color: $pink
+                font:
+                    size: 1.5rem
+                    weight: 700
+                text-transform: uppercase
+                letter-spacing: .4rem
+
+        &__arrow
+            position: absolute
+            bottom: 2%
+            right: 0
+            left: 0
+            margin: 0 auto
+            text-align: center
+            i
+                font:
+                    size: 6rem
+                color: #FFFFFF

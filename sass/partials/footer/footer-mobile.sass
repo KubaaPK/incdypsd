@@ -1,0 +1,34 @@
+@media only screen and (min-width : $mobile)
+    .footer
+        padding-top: 2vh 
+        border-top: 1px solid rgba(#ccc, .25)
+        text-align: center
+        &__navigation
+            list-style-type: none
+            padding-left: 0
+
+            li
+                margin: 2vh 0
+                display: block
+                a
+                    font:
+                        family: $mainfont
+                        size: 1.25rem
+
+                    color: $text
+                    text:
+                        decoration: none
+                        transform: uppercase
+
+                    letter-spacing: .4rem
+
+        &__socials
+            list-style-type: none
+            padding-left: 0
+
+            li
+                margin: 2vh 
+                display: inline-block
+                a
+                    color: $text
+                    font-size: 2rem

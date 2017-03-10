@@ -1,0 +1,40 @@
+@media only screen and (min-width : $desktop)
+
+    .bodytiles
+        &__row
+            &__column
+                
+                a
+                    figure
+                        position: relative
+                        
+                        &:after
+                            content: ''
+                            display: block
+
+                            position: absolute
+                            top: 0
+                            left: 0
+
+                            height: 100%
+                            width: 100%
+
+                            background-color: rgba(#1a1a1a,.6)
+
+                            z-index: 4
+                            opacity: 0
+                            
+                            transition: .3s
+                        &:hover
+                            &:after
+                                opacity: 1
+                                transition: .3s
+                            
+                                
+                    
+        .palace
+            figure
+                &:after
+                    width: 103%
+
+             

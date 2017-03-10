@@ -1,0 +1,68 @@
+@media only screen and (min-width : $desktop)
+    .container
+        width: 80%
+        margin: 0 auto
+    .header
+        background-position: top
+        .logo
+            left: 10%
+            width: 30%
+        .navigation
+            
+            &__showNavigationBtn
+                display: none
+
+            &__list
+                position: absolute
+                top: 8%
+                right: 10%
+                
+                display: inherit
+                width: 35%
+
+                margin-top: 0
+                padding-left: 0
+
+                list-style-type: none
+
+                &__element
+                    display: inline-block
+                    margin: 0 2%
+
+                   
+
+                    a
+                        font:
+                            size: 1.2rem
+                            weight: 700
+                            
+                        letter-spacing: .3rem
+
+                        transition: .2s
+                        &:hover
+                            color: $pink
+                            transition: .2s
+                        
+        &__text
+            &__title
+                font:
+                    size: 6rem
+
+            &__link
+                transition: .2s
+                &:hover
+                    letter-spacing: .3rem
+                    transition: .2s
+
+        &__arrow
+            i
+                top: 0px
+                transition: .2s
+            &:hover
+                i
+                    position: relative
+                    top: 5px
+                    
+                    color: $pink
+                    transition: .2s
+

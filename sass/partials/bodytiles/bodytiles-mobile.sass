@@ -1,0 +1,43 @@
+@media only screen and (min-width : $mobile)
+    .container
+        width: 100%
+        margin: 0 auto
+  
+
+    .bodytiles
+        margin-top: 5vh
+
+        display: flex
+        flex-direction: column
+        &__row
+            &__column
+                figure
+                    padding: 0
+                    margin: 0
+
+                    position: relative
+
+                    img
+                        width: 100%
+
+                    figcaption
+                        position: absolute
+                        bottom: 0
+                        left: 5%
+
+                        z-index: 5 
+                        img
+                            width: 40%
+                            display: block
+                            margin-bottom: 5%
+
+                        p
+                            font:
+                                family: $mainfont
+                                size: 2.25rem
+                                weight: 300
+                            color: #FFFFFF
+                            text:
+                                decoration: none
+                                transform: uppercase
+                            letter-spacing: .2rem
